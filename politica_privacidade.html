@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul,
+        ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Política de Privacidade</h1>
+        <p><em>Última atualização: 03/06/2025</em></p>
+    </header>
+
+    <main>
+        <h2>1. Introdução</h2>
+        <p>
+            Bem-vindo(a) ao nosso sistema! Esta Política de Privacidade explica como coletamos, usamos, armazenamos e
+            protegemos as informações pessoais dos usuários que utilizam nossa aplicação. Ao acessar ou utilizar o
+            sistema, você concorda com os termos desta política.
+        </p>
+        <p>
+            Este documento se aplica ao nosso aplicativo desenvolvido em FlutterFlow, cujo backend é fornecido pelo
+            Supabase. Caso você não concorde com alguma parte desta política, não prossiga com o uso do sistema.
+        </p>
+
+        <h2>2. Quais dados coletamos</h2>
+
+        <p>Durante o uso do sistema, podemos coletar, armazenar e processar os seguintes tipos de dados pessoais:</p>
+        <ol>
+            <li>
+                <strong>Dados de identificação</strong>
+                <ul>
+                    <li>Nome completo</li>
+                    <li>E-mail</li>
+                    <li>Telefone</li>
+                    <li>Data de nascimento (aniversário)</li>
+                    <li>Avatar (URL para imagem de perfil)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Dados de cadastro e autenticação</strong>
+                <ul>
+                    <li>ID único de usuário (fornecido pelo Supabase)</li>
+                    <li>Senha (hash armazenado pelo Supabase; em momento algum armazenamos senhas em texto simples)</li>
+                    <li>Tokens de autenticação (refresh token / access token), gerenciados pelo Supabase</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Dados de perfil e configuração</strong>
+                <ul>
+                    <li>Empresa/tenant (identificador de “tenant” e nome correspondente)</li>
+                    <li>Permissões e funções (por exemplo, módulos aos quais o usuário tem acesso, permissões
+                        específicas dentro do sistema)</li>
+                    <li>Informação sobre dependência/responsáveis (campo “responsável” ou “dependente”)</li>
+                    <li>Configurações individuais (por exemplo, preferências de notificação – recebe_app, recebe_email,
+                        recebe_notificacao)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Dados de uso do sistema</strong>
+                <ul>
+                    <li>Registros de login e logout (data e hora)</li>
+                    <li>Histórico de ações (por exemplo: atualização de perfil, acesso a relatórios, chamadas a
+                        procedimentos do Supabase)</li>
+                    <li>Configurações de tenant (dados de “rango_liberar_marmita” etc.)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Dados sensíveis (caso aplicável)</strong>
+                <ul>
+                    <li>Em princípio, nosso sistema <em>não</em> armazena dados de saúde, raça, religião, orientação
+                        sexual ou informações biométricas. Caso em algum futuro venha a necessitar de algum dado
+                        sensível, isso será informado de maneira explícita e com o consentimento prévio do usuário.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>3. Como usamos seus dados</h2>
+        <p>Utilizamos as informações coletadas para as seguintes finalidades:</p>
+        <ul>
+            <li>
+                <strong>Autenticação e autorização</strong>
+                <ul>
+                    <li>Verificar identidade do usuário ao realizar login</li>
+                    <li>Controlar o acesso a páginas, funcionalidades e relatórios de acordo com as permissões
+                        atribuídas</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Personalização da experiência</strong>
+                <ul>
+                    <li>Exibir nome, avatar e dados do perfil do usuário dentro do aplicativo</li>
+                    <li>Ajustar o menu e os módulos disponíveis conforme o perfil e permissões</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Comunicação</strong>
+                <ul>
+                    <li>Enviar e-mails de notificação e confirmação</li>
+                    <li>Disparar alertas dentro do sistema (por exemplo, avisos de erros ou mensagens de permissão
+                        insuficiente)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Armazenamento de configurações</strong>
+                <ul>
+                    <li>Salvar preferências individuais (por exemplo, “recebe_notificacao”, “recebe_email”,
+                        “recebe_app”)</li>
+                    <li>Configurações de tenant que impactam o comportamento do app (por exemplo, habilitar/ desabilitar
+                        funcionalidades como “liberar marmita”)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Monitoramento e melhorias</strong>
+                <ul>
+                    <li>Coletar métricas de uso para identificar gargalos, bugs e aprimorar funcionalidades</li>
+                    <li>Registro de erros (logs) para investigação de falhas e suporte técnico</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Conformidade legal</strong>
+                <ul>
+                    <li>Atender solicitações de auditoria ou regulamentação, quando solicitado por autoridades
+                        competentes</li>
+                    <li>Manter registros básicos de acesso por um período mínimo exigido pela legislação (ex.: LGPD)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>4. Compartilhamento de dados</h2>
+        <p>Não comercializamos nem cedemos seus dados pessoais a terceiros para fins de marketing sem o seu
+            consentimento explícito. Entretanto, seu uso e compartilhamento estão sujeitos às seguintes situações:</p>
+        <ul>
+            <li>
+                <strong>Provedores de serviços (Terceiros)</strong>
+                <ul>
+                    <li>
+                        <strong>Supabase</strong>
+                        <ul>
+                            <li>Nosso backend está hospedado e gerenciado pelo Supabase. Os dados coletados são
+                                armazenados em bancos de dados Postgres mantidos por eles.</li>
+                            <li>A transferência de dados para o Supabase está sujeita à política de privacidade e aos
+                                termos de serviço do Supabase.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>SendGrid (ou outro serviço de e-mail)</strong>
+                        <ul>
+                            <li>Para envio de e-mails de confirmação, redefinição de senha e notificações internas.</li>
+                            <li>Apenas os campos necessários para envio de e-mail (e-mail, nome) são compartilhados.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Google Analytics (opcional)</strong>
+                        <ul>
+                            <li>Se a aplicação fizer uso de Analytics para métricas de uso, apenas dados de navegação
+                                (rota, tempo em tela, eventos genéricos) são coletados – sem identificação direta do
+                                usuário.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exigências legais</strong>
+                <ul>
+                    <li>Poderemos compartilhar dados pessoais se formos obrigados por lei, ordem judicial ou requisição
+                        de autoridade governamental.</li>
+                    <li>Em caso de investigação de atividades ilícitas, poderemos fornecer informações às autoridades
+                        competentes.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Empresas parceiras</strong>
+                <ul>
+                    <li>Caso o sistema seja integrado com parceiros (ERP, serviços de pagamento, gateways, etc.), serão
+                        explicitados quais campos serão compartilhados, sempre obedecendo ao princípio de minimização de
+                        dados.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Como armazenamos e protegemos seus dados</h2>
+        <ul>
+            <li>
+                <strong>Armazenamento seguro</strong>
+                <ul>
+                    <li>Os dados são armazenados em servidores do Supabase, que oferecem criptografia em repouso
+                        (encryption at rest).</li>
+                    <li>As conexões entre o aplicativo FlutterFlow e o Supabase utilizam protocolo HTTPS/SSL, garantindo
+                        criptografia durante o trânsito (encryption in transit).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Acesso interno restrito</strong>
+                <ul>
+                    <li>Somente membros autorizados da equipe de desenvolvimento e administração do sistema têm acesso
+                        direto às tabelas de dados.</li>
+                    <li>Políticas de permissões no Supabase (Row Level Security) são aplicadas para que usuários só
+                        vejam o que lhes for estritamente necessário.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Boas práticas de segurança</strong>
+                <ul>
+                    <li>As senhas dos usuários (quando existem) não são armazenadas em texto simples; o Supabase usa
+                        hashing seguro (bcrypt, etc.).</li>
+                    <li>Utilizamos bibliotecas atualizadas e fazemos revisão periódica de segurança no código
+                        (dependências em dia, patch de vulnerabilidades).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Tempo de retenção</strong>
+                <ul>
+                    <li>Dados de usuários inativos podem ser mantidos por até 12 meses, de acordo com a política interna
+                        e exigências legais.</li>
+                    <li>Logs de acesso (data, hora, IP) são armazenados por 6 meses para fins de auditoria.</li>
+                    <li>Se você solicitar exclusão completa, seus dados serão apagados dentro de 30 dias úteis, exceto
+                        se houver exigência legal para retenção prolongada.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>6. Cookies e tecnologias semelhantes</h2>
+        <p>Como nosso sistema é um aplicativo mobile/web (FlutterFlow):</p>
+        <ul>
+            <li>
+                <strong>No app mobile (iOS/Android)</strong>, não utilizamos cookies da mesma forma que sites. Eventuais
+                dados de sessão e token de autenticação ficam armazenados no armazenamento local do dispositivo (Secure
+                Storage ou Shared Preferences), de forma criptografada.
+            </li>
+            <li>
+                <strong>Na versão web (caso exista)</strong>, podemos usar cookies ou storage
+                (LocalStorage/SessionStorage) para manter tokens de sessão. Toda informação sensível (como access token)
+                é armazenada de forma segura e criptografada pelo próprio FlutterFlow/Supabase.
+            </li>
+        </ul>
+        <p>
+            Você pode controlar ou apagar esses dados diretamente nas configurações de privacidade do seu
+            dispositivo/distribuição web, mas isso pode impactar o funcionamento automático de login e notificações.
+        </p>
+
+        <h2>7. Direitos do titular dos dados</h2>
+        <p>Conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD), você tem os seguintes direitos em
+            relação aos seus dados pessoais:</p>
+        <ol>
+            <li><strong>Confirmação de existência de tratamento</strong><br />
+                Solicitar ao controlador (nós) a confirmação de que seus dados estão sendo processados.
+            </li>
+            <li><strong>Acesso às informações</strong><br />
+                Obter cópia dos dados pessoais que mantemos.
+            </li>
+            <li><strong>Correção de dados incompletos, inexatos ou desatualizados</strong><br />
+                Solicitar atualização ou correção de informações.
+            </li>
+            <li><strong>Anonimização, bloqueio ou eliminação de dados desnecessários</strong><br />
+                Pedir que dados que não sejam mais necessários para a finalidade original sejam apagados ou
+                anonimizados.
+            </li>
+            <li><strong>Portabilidade de dados</strong><br />
+                Receber seus dados em formato estruturado e, se desejar, transferi-los a outro fornecedor de serviço.
+            </li>
+            <li><strong>Eliminação de dados pessoais</strong><br />
+                Solicitar que apaguemos seus dados pessoais, exceto quando houver obrigação legal ou interesse legítimo
+                para mantê-los (por exemplo, retenção fiscal).
+            </li>
+            <li><strong>Revogação do consentimento</strong><br />
+                Caso o tratamento seja baseado em consentimento, você pode retirar seu consentimento a qualquer momento,
+                sem prejudicar a legalidade do tratamento realizado anteriormente.
+            </li>
+            <li><strong>Informação sobre compartilhamento</strong><br />
+                Saber com quais terceiros compartilhamos seus dados.
+            </li>
+            <li><strong>Revogação do consentimento para marketing</strong><br />
+                Optar por não receber comunicações de marketing ou promoções.
+            </li>
+        </ol>
+        <p>
+            Para exercer esses direitos, entre em contato através dos dados na Seção 9 abaixo. Responderemos dentro do
+            prazo legal de 15 dias úteis.
+        </p>
+
+        <h2>8. Alterações nesta Política de Privacidade</h2>
+        <p>
+            Podemos atualizar esta Política de Privacidade periodicamente, para refletir mudanças em nossas práticas ou
+            em requisitos legais. Quando isso acontecer, publicaremos a nova versão nesta mesma página, indicando a
+            “última atualização” no topo.
+        </p>
+        <p>
+            Caso a alteração seja significativa (por exemplo, inclusão de novos tipos de dados ou mudança na forma de
+            compartilhamento), poderemos notificar você por e-mail (caso esteja cadastrado) ou por meio de aviso dentro
+            do sistema.
+        </p>
+        <p>
+            Recomendamos que você revise esta página sempre que voltar a utilizar o sistema, para estar ciente de
+            possíveis modificações.
+        </p>
+
+        <h2>9. Contato</h2>
+        <p>
+            Se tiver dúvidas, sugestões ou quiser exercer qualquer direito relacionado aos seus dados pessoais, entre em
+            contato conosco:
+        </p>
+        <ul>
+            <li><strong>E-mail:</strong> suporte@seudominio.com</li>
+            <li><strong>Telefone / WhatsApp:</strong> (XX) XXXX-XXXX</li>
+            <li><strong>Endereço (opcional):</strong> Rua Exemplo, 123 – Bairro Modelo, Cidade – Estado, CEP 00000-000
+            </li>
+        </ul>
+        <p>
+            Nossa equipe de privacidade responderá sua solicitação em até 15 dias úteis, conforme previsto pela LGPD.
+        </p>
+
+        <h2>10. Considerações Finais</h2>
+        <p>
+            Ao usar nosso sistema, você declara entender e concordar com os termos desta Política de Privacidade. A
+            proteção dos seus dados é de extrema importância para nós, e nos comprometemos a adotar as melhores práticas
+            de segurança e transparência.
+        </p>
+        <p>
+            Obrigado pela confiança!
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
