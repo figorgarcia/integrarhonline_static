@@ -68,21 +68,17 @@
 <body>
     <header>
         <h1>Política de Privacidade</h1>
-        <p><em>Última atualização: 03/06/2025</em></p>
+        <p><em>Última atualização: 10/01/2025</em></p>
     </header>
 
     <main>
         <h2>1. Introdução</h2>
         <p>
-            Bem-vindo(a) ao nosso sistema! Esta Política de Privacidade explica como coletamos, usamos, armazenamos e
+            Bem-vindo(a) ao IntegraRH Online! Esta Política de Privacidade explica como coletamos, usamos, armazenamos e
             protegemos as informações pessoais dos usuários que utilizam nossa aplicação. Ao acessar ou utilizar o
             sistema, você concorda com os termos desta política.
         </p>
-        <p>
-            Este documento se aplica ao nosso aplicativo desenvolvido em FlutterFlow, cujo backend é fornecido pelo
-            Supabase. Caso você não concorde com alguma parte desta política, não prossiga com o uso do sistema.
-        </p>
-
+        
         <h2>2. Quais dados coletamos</h2>
 
         <p>Durante o uso do sistema, podemos coletar, armazenar e processar os seguintes tipos de dados pessoais:</p>
@@ -94,26 +90,25 @@
                     <li>E-mail</li>
                     <li>Telefone</li>
                     <li>Data de nascimento (aniversário)</li>
-                    <li>Avatar (URL para imagem de perfil)</li>
+                    <li>Imagem de Perfil</li>
                 </ul>
             </li>
             <li>
                 <strong>Dados de cadastro e autenticação</strong>
                 <ul>
-                    <li>ID único de usuário (fornecido pelo Supabase)</li>
-                    <li>Senha (hash armazenado pelo Supabase; em momento algum armazenamos senhas em texto simples)</li>
-                    <li>Tokens de autenticação (refresh token / access token), gerenciados pelo Supabase</li>
+                    <li>ID único de usuário (gerado automaticamente)</li>
+                    <li>Senha</li>
+                    <li>Tokens de autenticação</li>
                 </ul>
             </li>
             <li>
                 <strong>Dados de perfil e configuração</strong>
                 <ul>
-                    <li>Empresa/tenant (identificador de “tenant” e nome correspondente)</li>
+                    <li>Unidade de Trabalho</li>
                     <li>Permissões e funções (por exemplo, módulos aos quais o usuário tem acesso, permissões
                         específicas dentro do sistema)</li>
                     <li>Informação sobre dependência/responsáveis (campo “responsável” ou “dependente”)</li>
-                    <li>Configurações individuais (por exemplo, preferências de notificação – recebe_app, recebe_email,
-                        recebe_notificacao)</li>
+                    <li>Configurações individuais</li>
                 </ul>
             </li>
             <li>
@@ -122,13 +117,12 @@
                     <li>Registros de login e logout (data e hora)</li>
                     <li>Histórico de ações (por exemplo: atualização de perfil, acesso a relatórios, chamadas a
                         procedimentos do Supabase)</li>
-                    <li>Configurações de tenant (dados de “rango_liberar_marmita” etc.)</li>
                 </ul>
             </li>
             <li>
-                <strong>Dados sensíveis (caso aplicável)</strong>
+                <strong>Dados sensíveis</strong>
                 <ul>
-                    <li>Em princípio, nosso sistema <em>não</em> armazena dados de saúde, raça, religião, orientação
+                    <li>Nosso sistema <em>não</em> armazena dados de saúde, raça, religião, orientação
                         sexual ou informações biométricas. Caso em algum futuro venha a necessitar de algum dado
                         sensível, isso será informado de maneira explícita e com o consentimento prévio do usuário.</li>
                 </ul>
@@ -164,16 +158,13 @@
             <li>
                 <strong>Armazenamento de configurações</strong>
                 <ul>
-                    <li>Salvar preferências individuais (por exemplo, “recebe_notificacao”, “recebe_email”,
-                        “recebe_app”)</li>
-                    <li>Configurações de tenant que impactam o comportamento do app (por exemplo, habilitar/ desabilitar
-                        funcionalidades como “liberar marmita”)</li>
+                    <li>Salvar preferências individuais</li>
+                    <li>Configurações de tenant que impactam o comportamento do app</li>
                 </ul>
             </li>
             <li>
                 <strong>Monitoramento e melhorias</strong>
                 <ul>
-                    <li>Coletar métricas de uso para identificar gargalos, bugs e aprimorar funcionalidades</li>
                     <li>Registro de erros (logs) para investigação de falhas e suporte técnico</li>
                 </ul>
             </li>
@@ -182,8 +173,6 @@
                 <ul>
                     <li>Atender solicitações de auditoria ou regulamentação, quando solicitado por autoridades
                         competentes</li>
-                    <li>Manter registros básicos de acesso por um período mínimo exigido pela legislação (ex.: LGPD)
-                    </li>
                 </ul>
             </li>
         </ul>
@@ -191,64 +180,14 @@
         <h2>4. Compartilhamento de dados</h2>
         <p>Não comercializamos nem cedemos seus dados pessoais a terceiros para fins de marketing sem o seu
             consentimento explícito. Entretanto, seu uso e compartilhamento estão sujeitos às seguintes situações:</p>
-        <ul>
-            <li>
-                <strong>Provedores de serviços (Terceiros)</strong>
-                <ul>
-                    <li>
-                        <strong>Supabase</strong>
-                        <ul>
-                            <li>Nosso backend está hospedado e gerenciado pelo Supabase. Os dados coletados são
-                                armazenados em bancos de dados Postgres mantidos por eles.</li>
-                            <li>A transferência de dados para o Supabase está sujeita à política de privacidade e aos
-                                termos de serviço do Supabase.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>SendGrid (ou outro serviço de e-mail)</strong>
-                        <ul>
-                            <li>Para envio de e-mails de confirmação, redefinição de senha e notificações internas.</li>
-                            <li>Apenas os campos necessários para envio de e-mail (e-mail, nome) são compartilhados.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Google Analytics (opcional)</strong>
-                        <ul>
-                            <li>Se a aplicação fizer uso de Analytics para métricas de uso, apenas dados de navegação
-                                (rota, tempo em tela, eventos genéricos) são coletados – sem identificação direta do
-                                usuário.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <strong>Exigências legais</strong>
-                <ul>
-                    <li>Poderemos compartilhar dados pessoais se formos obrigados por lei, ordem judicial ou requisição
-                        de autoridade governamental.</li>
-                    <li>Em caso de investigação de atividades ilícitas, poderemos fornecer informações às autoridades
-                        competentes.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Empresas parceiras</strong>
-                <ul>
-                    <li>Caso o sistema seja integrado com parceiros (ERP, serviços de pagamento, gateways, etc.), serão
-                        explicitados quais campos serão compartilhados, sempre obedecendo ao princípio de minimização de
-                        dados.</li>
-                </ul>
-            </li>
-        </ul>
 
         <h2>5. Como armazenamos e protegemos seus dados</h2>
         <ul>
             <li>
                 <strong>Armazenamento seguro</strong>
                 <ul>
-                    <li>Os dados são armazenados em servidores do Supabase, que oferecem criptografia em repouso
-                        (encryption at rest).</li>
-                    <li>As conexões entre o aplicativo FlutterFlow e o Supabase utilizam protocolo HTTPS/SSL, garantindo
+                    <li>Os dados são armazenados em servidores seguros</li>
+                    <li>As conexões entre o aplicativo e o banco de dados utilizam protocolo HTTPS/SSL, garantindo
                         criptografia durante o trânsito (encryption in transit).</li>
                 </ul>
             </li>
@@ -257,14 +196,12 @@
                 <ul>
                     <li>Somente membros autorizados da equipe de desenvolvimento e administração do sistema têm acesso
                         direto às tabelas de dados.</li>
-                    <li>Políticas de permissões no Supabase (Row Level Security) são aplicadas para que usuários só
-                        vejam o que lhes for estritamente necessário.</li>
                 </ul>
             </li>
             <li>
                 <strong>Boas práticas de segurança</strong>
                 <ul>
-                    <li>As senhas dos usuários (quando existem) não são armazenadas em texto simples; o Supabase usa
+                    <li>As senhas dos usuários não são armazenadas em texto simples; o banco de dados usa
                         hashing seguro (bcrypt, etc.).</li>
                     <li>Utilizamos bibliotecas atualizadas e fazemos revisão periódica de segurança no código
                         (dependências em dia, patch de vulnerabilidades).</li>
@@ -283,7 +220,7 @@
         </ul>
 
         <h2>6. Cookies e tecnologias semelhantes</h2>
-        <p>Como nosso sistema é um aplicativo mobile/web (FlutterFlow):</p>
+        <p>Como nosso sistema é um aplicativo mobile/web:</p>
         <ul>
             <li>
                 <strong>No app mobile (iOS/Android)</strong>, não utilizamos cookies da mesma forma que sites. Eventuais
@@ -291,9 +228,9 @@
                 Storage ou Shared Preferences), de forma criptografada.
             </li>
             <li>
-                <strong>Na versão web (caso exista)</strong>, podemos usar cookies ou storage
+                <strong>Na versão web</strong>, podemos usar cookies ou storage
                 (LocalStorage/SessionStorage) para manter tokens de sessão. Toda informação sensível (como access token)
-                é armazenada de forma segura e criptografada pelo próprio FlutterFlow/Supabase.
+                é armazenada de forma segura e criptografada.
             </li>
         </ul>
         <p>
@@ -363,9 +300,8 @@
             contato conosco:
         </p>
         <ul>
-            <li><strong>E-mail:</strong> suporte@seudominio.com</li>
-            <li><strong>Telefone / WhatsApp:</strong> (XX) XXXX-XXXX</li>
-            <li><strong>Endereço (opcional):</strong> Rua Exemplo, 123 – Bairro Modelo, Cidade – Estado, CEP 00000-000
+            <li><strong>E-mail:</strong> contato@figti.com.br</li>
+            <li><strong>Telefone / WhatsApp:</strong> (48) 98825-3215</li>
             </li>
         </ul>
         <p>
@@ -384,7 +320,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 FIGTI! Soluções em TI. Todos os direitos reservados.</p>
     </footer>
 </body>
 
